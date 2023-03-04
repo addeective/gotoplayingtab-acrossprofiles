@@ -1,0 +1,32 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "Across-profile Go To Playing Tab",
+  "description": "This extension allows you to go to a tab that is emitting sound.",
+  "version": "6.3",
+  "action": {
+    "default_icon": {
+      "38": "icons/icon38.png"
+    },
+    "default_title": "Across-profile Go To Playing Tab"
+  },
+  "permissions": [
+    "contextMenus","tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "goto_tab": {
+      "description": "Go to playing tab"
+    },
+    "close_tabs": {
+      "description": "Close playing tabs"
+    }
+  }
+}
